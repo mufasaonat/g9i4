@@ -1,0 +1,39 @@
+*{
+    font-family:sans-serif;
+    background-color: wheat;
+    font-size: 0;
+    display: block;
+}
+
+.row-title h2{
+    font-size: 3.5vi;
+    text-align: center;
+    color:crimson;  
+    line-height: .1;  
+}
+p{
+    font-size: 1.30vi;
+    font-style: normal;
+}
+.row-content{
+    font-size: 1.30vi;
+}
+
+.card-container{
+    margin-left: 150px;
+    display: inline-block;
+}
+.card{
+    width: 350px;
+    /* background-color: blue;     */
+}
+
+#m31-card, #m32-card{
+    padding: 50px;
+}
+img{
+    width: 350px;
+}
+
+
+  
