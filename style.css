@@ -15,25 +15,41 @@ p{
     font-size: 1.30vi;
     font-style: normal;
 }
+h3{
+    font-size: 1.30vi;
+    font-style: normal;
+    color: crimson;
+    text-align: center;
+}
 .row-content{
     font-size: 1.30vi;
+    width: 85%;      
+    margin:auto;
 }
 
 .card-container{
-    margin-left: 150px;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
 }
-.card{
-    width: 350px;
-    /* background-color: blue;     */
+ .card-holder, .card {
+    flex: 1 1 calc(50% - 20px); /* Two equal columns with spacing */
+    box-sizing: border-box;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    text-align: center;
 }
 
-#m31-card, #m32-card{
-    padding: 50px;
+/* Image styles */
+img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
 }
-img{
-    width: 350px;
-}
+
 
 
   
