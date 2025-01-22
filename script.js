@@ -11,7 +11,7 @@ for (let i = 1; i <= totalItems; i++) {
   m31CardHolder.className = "card-holder";
 
   const m31Img = document.createElement("img");
-  m31Img.src = `${m31Path}M31${i.toString().padStart(2, "0")}.jpg`;
+  m31Img.src = `./${m31Path}M31${i.toString().padStart(2, "0")}.jpg`;
   m31Img.alt = 'Image M31-${i}';
   m31Img.onerror = function () {
     this.style.display = "none";
