@@ -66,12 +66,11 @@ img {
     color: white;
   }
   
-  p{
+  .card-holder p{
     font-size: 1.30vi;
     font-style: oblique;
     color:white;
-    background-color:darkred
-  }
-
-
-  
+    background-color:darkturquoise;
+    width: 150px;
+    margin: auto;
+  }  
