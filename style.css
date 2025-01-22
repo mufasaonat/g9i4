@@ -54,8 +54,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:cadetblue; /* A neutral fallback color */
-    color: #999;
+    background-color:gainsboro; /* A neutral fallback color */
+    color: white;
     font-size: 14px;
     font-style: italic;
   }
