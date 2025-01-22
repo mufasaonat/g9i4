@@ -32,7 +32,7 @@ for (let i = 1; i <= totalItems; i++) {
   m32CardHolder.className = "card-holder";
 
   const m32Img = document.createElement("img");
-  m32Img.src = `${m32Path}M32${i.toString().padStart(2, "0")}.jpg`;
+  m32Img.src = `./${m32Path}M32${i.toString().padStart(2, "0")}.jpg`;
   m32Img.alt = "";
   m32Img.onerror = function () {
     this.style.display = "none";
