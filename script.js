@@ -21,6 +21,12 @@ for (let i = 1; i <= totalItems; i++) {
   m31CardHolder.appendChild(m31Img);
   m31CardContainer.appendChild(m31CardHolder);
 
+  const m31FileName = `M31${i.toString().padStart(2, "0")}.jpg`;
+  const m31FileNameTag = document.createElement("p");
+  m31FileNameTag.textContent = m31FileName;
+  m31FileNameTag.className = "m31FileNameTag"; // Added class name here
+  m31CardHolder.appendChild(m31FileNameTag);
+
   // Create elements for M32
   const m32CardHolder = document.createElement("div");
   m32CardHolder.className = "card-holder";
@@ -35,4 +41,10 @@ for (let i = 1; i <= totalItems; i++) {
 
   m32CardHolder.appendChild(m32Img);
   m32CardContainer.appendChild(m32CardHolder);
+
+  const m32FileName = `M32${i.toString().padStart(2, "0")}.jpg`;
+  const m32FileNameTag = document.createElement("p");
+  m32FileNameTag.className = "m32FileNameTag"; // Added class name here
+  m32FileNameTag.textContent = m32FileName;
+  m32CardHolder.appendChild(m32FileNameTag);
 }
