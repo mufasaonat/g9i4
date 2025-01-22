@@ -2,8 +2,8 @@ const m31CardContainer = document.getElementById("m31-card");
 const m32CardContainer = document.getElementById("m32-card");
 
 const totalItems = 30; // Adjust this based on the total number of images
-const m31Path = "/M31/";
-const m32Path = "/M32/";
+const m31Path = "./M31/";
+const m32Path = "./M32/";
 
 for (let i = 1; i <= totalItems; i++) {
   // Create elements for M31
@@ -11,7 +11,7 @@ for (let i = 1; i <= totalItems; i++) {
   m31CardHolder.className = "card-holder";
 
   const m31Img = document.createElement("img");
-  m31Img.src = `./${m31Path}M31${i.toString().padStart(2, "0")}.jpg`;
+  m31Img.src = `${m31Path}M31${i.toString().padStart(2, "0")}.jpg`;
   m31Img.alt = 'Image M31-${i}';
   m31Img.onerror = function () {
     this.style.display = "none";
@@ -32,7 +32,7 @@ for (let i = 1; i <= totalItems; i++) {
   m32CardHolder.className = "card-holder";
 
   const m32Img = document.createElement("img");
-  m32Img.src = `./${m32Path}M32${i.toString().padStart(2, "0")}.jpg`;
+  m32Img.src = `${m32Path}M32${i.toString().padStart(2, "0")}.jpg`;
   m32Img.alt = "";
   m32Img.onerror = function () {
     this.style.display = "none";
